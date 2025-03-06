@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2º edição do Festival Nacional de Horror e Suspense</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="containerPrincipal">
+        <h2>2º edição do Festival Nacional de Horror e Suspense</h2>
+        <h3>Inscrições abertas</h3>
+        <form class="formulario" id="formulario">
+            <div>
+                <p id="pergunta">Vai ser inscrito um longa metragem (filme) ou um curta?</p>
+                <div class="elementosForm3">
+                    <label for="curta">
+                        <input type="radio" id="curta" name="curtaOuLonga" value="curta">
+                        <span class="nomeTipo">Curta</span>
+                    </label>
+    
+                    <label for="filme">
+                        <input type="radio" id="filme" name="curtaOuLonga" value="filme">
+                        <span class="nomeTipo">Filme</span>
+                    </label>
+                </div>
+
+
+            </div>
+
+            <div class="elementosForm">
+                <label class="questionario" for="nomeFilme">Nome do filme:</label>
+                <input class="boxInput" type="text" id="nomeFilme" name="nomeFilme" required>
+            </div>
+
+            <div class="elementosForm2">
+                <label class="questionario" for="nomeDiretor">Diretor(es)</label>
+                <input class="boxInput" type="text" id="nomeDiretor" name="nomeDiretor" required>
+                <input class="boxInput" type="text" id="nomeDiretor" name="nomeDiretor">
+                <input class="boxInput" type="text" id="nomeDiretor" name="nomeDiretor">
+                <input class="boxInput" type="text" id="nomeDiretor" name="nomeDiretor">
+            </div>
+
+            <div class="elementosForm">
+                <label class="questionario" for="email">Email para contato:</label>
+                <input class="boxInput" type="email" id="email" name="email" required>
+            </div>
+
+            <div class="elementosForm">
+                <label class="questionario" for="telefone">Telefone para contato:</label>
+                <input class="boxInput" type="tel" id="telefone" name="telefone" required>
+            </div>
+
+            <div class="elementosForm2">
+                <label class="questionario" for="arquivo">Envie o seu filme:</label>
+                <input class="boxInput" type="file" id="arquivo" name="arquivo" required>
+            </div>
+
+            <div class="botoes">
+                <button id="botaoEnvio">Enviar</button>
+                <button id="botaoReiniciar" onclick="limparDados()">Limpar dados</button>
+            </div>
+
+
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

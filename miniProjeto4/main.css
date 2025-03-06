@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(4px);
+    display: grid;
+    place-items: center; 
+    min-height: 100vh;
+    transition: background-image 1s;
+}
+
+.containerPrincipal {
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    width: 42%;
+    height: 85%;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.elementosForm {
+    display: flex;
+    flex-direction: row;
+    font-family: "American Typewriter", serif;
+    font-size: 16px;
+    align-items: center;
+    text-align: start;
+    padding: 2px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    gap: 5px;
+}
+
+.elementosForm2 {
+    display: flex;
+    flex-direction: column;
+    font-family: "American Typewriter", serif;
+    font-size: 16px;
+    text-align: start;
+    padding: 8px;
+    text-align: center;
+
+}
+
+.elementosForm3 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 150px;
+    font-size: 14px;
+}
+
+.elementosForm3 label {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .elementosForm3 label input {
+    display: none;
+  }
+  
+  .elementosForm3 label .nomeTipo {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgb(16, 16, 17);
+    transition: all .15s ease-in-out;
+  }
+  
+  .elementosForm3 label input:checked + .nomeTipo {
+    background-color: #fff;
+    font-weight: 600;
+  }
+
+
+.questionario {
+    text-align: start;
+    padding: 3px;
+}
+
+#pergunta {
+    font-size: 14px;
+    font-style: italic;
+}
+
+#nomeFilme {
+    width: 70%;
+    height: 20px;
+}
+
+#email {
+    width: 70%;
+    height: 20px;
+}
+
+#telefone {
+    width: 40%;
+    height: 20px;
+}
+
+#nomeDiretor {
+    margin-bottom: 4px;
+}
+
+#arquivo {
+    border-radius: 8px;
+    width: 100%;
+    height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.boxInput {
+    width: 100%;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+}
+
+button {
+    border-radius: 8px;
+    width: 150px;
+    height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    bottom: 0;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    touch-action: manipulation;
+    will-change: transform;
+    user-select: none;
+    -webkit-user-select: none;
+
+}
+
+button:disabled {
+    pointer-events: none;
+}
+  
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0 8px 15px;
+
+}
+  
+button:active {
+    box-shadow: none;
+
+}
+
+
+h2 {
+    font-family: 'Special Elite', monospace;
+    text-align: center;
+}
